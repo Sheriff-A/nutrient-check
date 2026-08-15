@@ -42,10 +42,10 @@
 - [x] 6.2 Add an `api` job: `actions/setup-dotnet`, `dotnet restore`, `dotnet build`, and a lint/format check (e.g. `dotnet format --verify-no-changes`) for `apps/api`
 - [x] 6.3 Add a `web` job: `actions/setup-node`, `npm ci`, `npm run build`, `npm run lint` for `apps/web`
 - [x] 6.4 Confirm both jobs run in parallel (no unnecessary `needs:` dependency between them)
-- [ ] 6.5 Open a throwaway PR (or push to a branch) to confirm both jobs run and report status correctly, per `specs/ci-build-lint/spec.md`; confirm a deliberately broken build/lint fails the corresponding job
+- [x] 6.5 Open a throwaway PR (or push to a branch) to confirm both jobs run and report status correctly, per `specs/ci-build-lint/spec.md`; confirm a deliberately broken build/lint fails the corresponding job
 
 ## 7. Wrap-up verification
 
-- [ ] 7.1 Confirm PLANNING.md Section 8 Phase 0 "Done when" condition: `docker-compose up` gives a working empty app end to end
-- [ ] 7.2 Confirm CI is green on a real PR for this change
-- [ ] 7.3 Run `openspec validate init-repo-scaffold --strict` and fix any reported issues
+- [x] 7.1 Confirm PLANNING.md Section 8 Phase 0 "Done when" condition: `docker-compose up` gives a working empty app end to end
+- [x] 7.2 Confirm CI is green on a real PR for this change
+- [x] 7.3 Run `openspec validate init-repo-scaffold --strict` and fix any reported issues (passed clean, no issues reported)
