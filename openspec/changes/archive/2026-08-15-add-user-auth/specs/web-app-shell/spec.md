@@ -25,3 +25,10 @@ The web app SHALL resolve a `/profile` route that requires an authenticated sess
 #### Scenario: Visiting the profile route while unauthenticated
 - **WHEN** an unauthenticated visitor navigates to `/profile`
 - **THEN** the app redirects the visitor to `/login` instead of rendering the profile page
+
+### Requirement: No functional behavior implied by stub routes
+Routes that remain stubs SHALL contain only placeholder content (e.g. a heading naming the page) and SHALL NOT implement forms, data fetching, or auth logic — that behavior belongs to later, separate changes. `/login` and `/profile` are no longer stub routes as of the `user-auth` capability; this requirement applies to `/meals` and any future stub routes only.
+
+#### Scenario: Stub page has no data dependency
+- **WHEN** `/meals` is rendered with no backend API running
+- **THEN** the page still renders successfully, since it makes no network calls
