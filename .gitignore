@@ -66,3 +66,7 @@ npm-debug.log*
 
 # Visual Studio
 .vs/
+
+PLANNING.md
+.claude/
+.github/
